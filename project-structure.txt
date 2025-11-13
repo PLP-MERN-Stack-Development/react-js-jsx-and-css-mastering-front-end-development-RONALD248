@@ -1,0 +1,31 @@
+react-week3-project/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── Button.jsx
+│   │   │   ├── Card.jsx
+│   │   │   └── Navbar.jsx
+│   │   ├── layout/
+│   │   │   ├── Layout.jsx
+│   │   │   └── Footer.jsx
+│   │   └── tasks/
+│   │       └── TaskManager.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Tasks.jsx
+│   │   ├── ApiDemo.jsx
+│   │   └── About.jsx
+│   ├── hooks/
+│   │   ├── useLocalStorage.js
+│   │   └── useApi.js
+│   ├── context/
+│   │   └── ThemeContext.js
+│   ├── utils/
+│   │   └── constants.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── tailwind.config.js
+├── vite.config.js
+└── package.json

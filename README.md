@@ -1,70 +1,160 @@
-# React.js and Tailwind CSS Assignment
+# 🎯 React.js Week 3 Project - TaskFlow
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+A modern, responsive React application built with Vite, featuring task management, API integration, and dark mode support.
 
-## Assignment Overview
+## 🚀 Features
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+- **📱 Responsive Design** - Works perfectly on mobile, tablet, and desktop
+- **🎨 Dark/Light Mode** - Toggle between themes with persistence
+- **✅ Task Management** - Add, complete, delete, and filter tasks
+- **🌐 API Integration** - Fetch and display data from JSONPlaceholder
+- **⚡ Modern React** - Built with React 18, Hooks, and Context API
+- **🎯 Tailwind CSS** - Utility-first styling with custom animations
 
-## Getting Started
+## 🛠️ Tech Stack
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+- **Frontend**: React.js 18, JSX
+- **Styling**: Tailwind CSS
+- **Routing**: React Router v6
+- **Build Tool**: Vite
+- **State Management**: React Hooks & Context API
 
-## Files Included
+## 📦 Installation
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+1. **Clone the repository**
+   ```bash
+   git clone <your-repository-url>
+   cd react-week3-project
+Install dependencies
 
-## Requirements
+bash
+npm install
+Start development server
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+bash
+npm run dev
+Build for production
 
-## Project Structure
+bash
+npm run build
+🎮 Usage
+Task Management
+Add new tasks using the input form
 
-```
+Mark tasks as completed using checkboxes
+
+Filter tasks by status (All, Active, Completed)
+
+Delete individual tasks or clear all completed tasks
+
+API Demo
+Browse posts from JSONPlaceholder API
+
+Search through posts using the search bar
+
+Load more posts with pagination
+
+View loading and error states
+
+Theme Switching
+Toggle between light and dark modes using the theme button
+
+Theme preference is saved in localStorage
+
+📁 Project Structure
+text
 src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
-```
+├── components/          # Reusable UI components
+│   ├── ui/             # Basic UI components (Button, Card, Navbar)
+│   ├── layout/         # Layout components (Layout, Footer)
+│   └── tasks/          # Task-specific components
+├── pages/              # Page components
+├── hooks/              # Custom React hooks
+├── context/            # React Context providers
+└── utils/              # Utility functions and constants
+🎨 Styling
+This project uses Tailwind CSS with the following features:
 
-## Submission
+Responsive design utilities
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+Dark mode variant classes
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+Custom animations and transitions
 
-## Resources
+Component-based styling with @apply directive
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+🔧 Customization
+Adding New Components
+Create component file in appropriate folder
+
+Export component as default
+
+Import and use in pages
+
+Modifying Themes
+Edit tailwind.config.js to customize:
+
+Color palette
+
+Typography
+
+Spacing
+
+Animations
+
+📱 Responsive Breakpoints
+sm: 640px and up
+
+md: 768px and up
+
+lg: 1024px and up
+
+xl: 1280px and up
+
+🚀 Deployment
+Vercel
+bash
+npm install -g vercel
+vercel
+Netlify
+bash
+npm run build
+# Drag dist folder to Netlify
+GitHub Pages
+bash
+npm install --save-dev gh-pages
+# Add to package.json scripts:
+# "predeploy": "npm run build",
+# "deploy": "gh-pages -d dist"
+npm run deploy
+📄 License
+MIT License - feel free to use this project for learning and development.
+
+👨‍💻 Author
+Built as part of React.js Week 3 curriculum assignment.
+
+Happy Coding! 🎉
+
+text
+
+## 🚀 Deployment Instructions
+
+### Vercel Deployment
+1. Install Vercel CLI: `npm i -g vercel`
+2. Run: `vercel`
+3. Follow the prompts to deploy
+
+### Netlify Deployment
+1. Build the project: `npm run build`
+2. Drag the `dist` folder to Netlify
+3. Your app will be deployed automatically
+
+### GitHub Pages
+Add to package.json scripts:
+```json
+"predeploy": "npm run build",
+"deploy": "gh-pages -d dist"
+Then run:
+
+bash
+npm run deploy
